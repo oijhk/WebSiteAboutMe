@@ -37,18 +37,18 @@ header {
   width:  100%;
   background-image: url("https://placeimg.com/1000/400/any");
   background-size: cover;
-  height: 400px;
+  height: 350px;
   text-align: center;
   padding-top: 40px;
 }
 header img {
   border-radius: 50%;
   border: 2px solid #000;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 header img:hover {
   border: 5px solid #000;
-  transition: scale(1.2) rotate(5deg);
+  transition: scale(1.2) rotate(25deg);
 }
 .tag {
   display:table;
@@ -56,10 +56,18 @@ header img:hover {
   margin: 10px auto;
   padding:  10px;
   border-radius: 10px;
+  transition: transform 1s ease-out;
+}
+.tag:hover{
+transform: translateX(40px);
 }
 .sub-title {
   background-color: #000;
   color: yellow;
+  transition: transform 1s ease-out;
+}
+.sub-title:hover {
+  transform: translateX(40px);
 }
 .content{
   display: flex;
@@ -72,19 +80,33 @@ header img:hover {
   margin: 10px;
   padding: 50px;
   border-bottom: 3px solid grey;
-  border-radius: 5px
+  border-radius: 5px;
 }
 .tag-list {
   display: flex;
   flex-flow: row;
   list-style-type: none;
-  color: #fff
+  color: #fff;
+  padding: 10px;
 }
 .tag-yellow {
   background-color: #ff9904;
+  transition: padding 0.3s ease-out , background-color 1s ease-out, transform 1s ease-out ;
+}
+.tag-yellow:hover {
+  background-color: #32c22b;
+  padding: 15px;
+  transform:translateY(15px) ;
 }
 .tag-blue {
   background-color: #0399ff;
+  transition: padding 0.3s ease-out , background-color 1s ease-out , transform 1s ease-out ;
+
+}
+.tag-blue:hover {
+  background-color: #32c22b;
+  padding: 15px;
+  transform:translateY(15px);
 }
 footer {
   text-align: center;
